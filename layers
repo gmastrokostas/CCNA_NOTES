@@ -1,0 +1,56 @@
+#Collision Domain
+A network segment where devices send data at the same time causing packet collisions.
+
+#Broadcast Domain
+A logical part of a computer network that allows nodes to communicate by sending/receiving broadcast messages.
+
+#Network Segment
+Part of a network that uses shared medium to connect.
+
+#What can cause congestion
+Too many hosts in a broadcast domain
+Broadcast storms
+Multicast traffic
+Low bandwith
+Existence of hubs
+Lots of ARP requests
+
+###############
+Routers - Layer 3
+- Routers break broadcast domains.  Each switch is its own broadcast domain and routers connect can connect multiple switches.
+  Routers isolate network broadcast requests between different switches.
+- Routers provide connection to WAN
+- Routers can filter network based on layer3
+- Routers can locate specific networks.
+
+###############
+Switches - Layer 2
+- They dont forward packets to other networks.
+- They only switch frames from one port to another with in the same broadcast domain.
+- Each port on the switch is its own collision domain.
+- Switching is hardware based.
+- Switches read frames as they pass through and creates an ARP table.
+#################################################################################################################################
+
+DoD AND OSI MODELS
+---------------------------------------------
+DoD			|	OSI
+----------------------------------------------
+		      DATA
+Process/Application	|	Application
+			|	Presentation
+			|	Session
+-----------------------------------------------	
+                     SEGMENT
+Transport		|	Transport
+----------------------------------------------
+		      PACKET
+Internet		|	Network	
+----------------------------------------------
+                      FRAME
+Link			|	Data Link (FRAME)
+			|	Physical  (BIT)
+----------------------------------------------
+
+
+
